@@ -11,7 +11,26 @@
 </head>
 
 <body>
+    <!-- Top Nav Bar -->
+    <div class="top-bar">
+        <!-- Previous Button -->
+        <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i> Prev Page
+        </button>
+        <!-- Next Button -->
+        <button class="btn" id="next-page">
+            Next Page <i class="fas fa-arrow-circle-right"></i>
+        </button>
+        <!-- Page Number -->
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+    </div>
 
+    <!-- PDF Renderer -->
+    <canvas id="pdf-render"></canvas>
+
+    <!-- https://github.com/mozilla/pdf.js -->
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="js/main.js"></script>
 </body>
